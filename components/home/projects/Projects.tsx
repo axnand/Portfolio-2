@@ -106,26 +106,23 @@ Engage users with a unique and interactive video carousel developed using GSAP f
   },
 
   {
-    title: "Credit Card Fraud Detection",
-    imgSrc: "/project-imgs/project4.png",
-    code: "https://github.com/dhawalbisht/CreditCardFraudDetection.git",
-    projectLink: "https://github.com/dhawalbisht/CreditCardFraudDetection.git",
-    tech: ["TensorFlow", "Seaborn", "Python prediction libraries"],
+    title: "JetPicture's Website",
+    imgSrc: "/project-imgs/image3.png",
+    code: "https://github.com/axnand/jetpicture",
+    projectLink: "https://jetpicture.vercel.app/",
+    tech: ["JavaScript", "HTML5", "BootStrap", "CSS"],
     description:
-      "Credit Card Fraud Detection project successfully addressed the pressing need for an intelligent and scalable solution to combat electronic transaction fraud.",
-    modalContent: (
+      "This project is a simple transaction management system where users can add new transactions by entering a text description and the corresponding amount. Transactions are categorized as either expenses (negative amounts) or income (positive amounts).",
+      modalContent: (
       <>
         <p>
-        Deep Learning Model with TensorFlow
-Developed a robust deep learning model capable of autonomously learning intricate patterns indicative of fraudulent transactions.
+        Personal Finance Management: Individuals can use this application to track their personal expenses, income sources, and overall financial health. It serves as a digital ledger for managing budgets and analyzing spending patterns.
         </p>
         <p>
-        Exploratory Data Analysis with Seaborn
-Utilized Seaborn integration for comprehensive exploratory data analysis, providing valuable insights into transaction patterns, outliers, and key features influencing fraud detection.
+        Small Business Accounting: Small businesses or freelancers can utilize the application to record business transactions, monitor cash flows, and maintain accurate financial records. The categorization feature aids in separating business expenses from personal ones.
         </p>
         <p>
-        Python Prediction Libraries
-Incorporated diverse Python prediction libraries such as Scikit-learn and XGBoost for model evaluation, fine-tuning, and prediction accuracy.
+        Budget Tracking and Analysis: Users can leverage the total balance display and categorized transactions to create budgets, track expenses against income, identify areas for cost-cutting, and make informed financial decisions.
         </p>
       </>
     ),
