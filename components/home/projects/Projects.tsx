@@ -19,7 +19,7 @@ export const Projects = () => {
 const projects = [
   {
     title: "Study Fliss",
-    imgSrc: "/project-imgs/project1.png",
+    imgSrc: "/project-imgs/image.png",
     code: "https://github.com/axnand/StudyFliss2",
     projectLink: "https://studyfliss.com/",
     tech: ["NextJs", "NodeJs", "SupaBase","CloudFare R2", "TailwindCSS"],
