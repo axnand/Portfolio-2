@@ -51,25 +51,33 @@ Analyze past IPU exam papers and receive potential questions and study tips.
 
 
   {
-    title: "Insightify",
-    imgSrc: "/project-imgs/project3.jpg",
-    code: "https://github.com/dhawalbisht/Insightify",
-    projectLink: "https://github.com/dhawalbisht/Insightify",
-    tech: ["Fask", "ReactJs",  "CSS"],
+    title: "Iphone Website",
+    imgSrc: "/project-imgs/image2.png",
+    code: "https://github.com/axnand/myiphone",
+    projectLink: "https://myiphone-alpha.vercel.app/",
+    tech: ["Vite", "ReactJs",  "ThreeJs" ,'GSAP'],
     description:
-      "This project provides a web-based PDF summarizer application with two main features: text summarization and question answering. The backend is powered by Flask, while the frontend is built using React.js.",
+      "This is a clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP and Three.js for displaying iPhone 15 Pro models in various colors and shapes.",
     modalContent: (
       <>
+       <p>
+       This is a clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP and Three.js for displaying iPhone 15 Pro models in various colors and shapes.</p>
         <p>
-        Our app simplifies complex PDFs, offering quick summaries and answering questions to boost productivity.
-        Leveraging Flask on the backend, the app seamlessly processes PDF documents uploaded by users, extracting key information for summarization and question answering.
-        </p>
+        Platform Features</p>
         <p>
-       Built with React on the frontend, the app features an intuitive and interactive user interface that allows users to upload PDFs, customize summary lengths, ask questions, and receive instant answers.
+1. <b><u >Beautiful Subtle Smooth Animations using GSAP:</u></b> Enhanced user experience with seamless and captivating animations powered by GSAP.</p>
+
+
+<p>2. <b><u> 3D Model Rendering with Different Colors and Sizes:</u></b> Explore the iPhone 15 Pro from every angle with dynamic 3D rendering, offering various color and size options.</p>
+
+   
+<p>3. <b><u>Custom Video Carousel (made with GSAP):</u></b>
+Engage users with a unique and interactive video carousel developed using GSAP for a personalized browsing experience.
         </p>
-        <p>
-        The app is designed for continuous improvement, with plans for incorporating additional features such as language translation, sentiment analysis, and document clustering to further enhance its capabilities.
+        <p>4. <b><u>Custom Video Carousel (made with GSAP):</u></b>
+        Consistent access and optimal viewing on any device with a fully responsive design that adapts to different screen sizes.
         </p>
+
       </>
     ),
   },
