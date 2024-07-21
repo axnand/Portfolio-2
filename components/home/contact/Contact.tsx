@@ -61,24 +61,24 @@ export const Contact = () => {
             <p className={styles.contactCopy}>
               Shoot me an email if you want to connect! You can also find me on{" "}
               <Link
-                href="https://www.instagram.com/dhawal_bisht/"
+                href="https://www.linkedin.com/in/anand-mohan-jha-788507256/"
                 target="_blank"
                 rel="nofollow"
               >
-                Instagram
+                LinkedIn
               </Link>{" "}
               or{" "}
-              <Link href="https://www.linkedin.com/in/dhawal-bisht/" target="_blank" rel="nofollow">
-                LinkedIn
+              <Link href="https://www.instagram.com/aanaxnd/" target="_blank" rel="nofollow">
+                Instagram
               </Link>{" "}
               if that&apos;s more your speed.
             </p>
           </Reveal>
           <Reveal width="100%">
-            <Link href="mailto:dhawalbisht4543@gmail.com">
+            <Link href="mailto:anandmohanjha241@gmail.com">
               <div className={styles.contactEmail}>
                 <AiFillMail size="2.4rem" />
-                <span>dhawalbisht4543@gmail.com</span>
+                <span>anandmohanjha241@gmail.com</span>
               </div>
             </Link>
           </Reveal>

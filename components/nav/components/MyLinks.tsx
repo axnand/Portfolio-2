@@ -17,7 +17,7 @@ export const MyLinks = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
-        <Link href="https://github.com/dhawalbisht" target="_blank" rel="nofollow">
+        <Link href="https://github.com/axnand" target="_blank" rel="nofollow">
           <AiFillGithub size="2.4rem" />
         </Link>
       </motion.span>
@@ -30,21 +30,13 @@ export const MyLinks = () => {
           <BsDiscord size="2.4rem" />
         </Link>
       </motion.span> */}
-      <motion.span
-        initial={{ y: -30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-      >
-        <Link href="https://t.me/dhawalbisht" target="_blank" rel="nofollow">
-          <BsTelegram size="2.4rem" />
-        </Link>
-      </motion.span>
+      
       <motion.span
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <Link href="https://www.linkedin.com/in/dhawal-bisht/" target="_blank" rel="nofollow">
+        <Link href="https://www.linkedin.com/in/anand-mohan-jha-788507256/" target="_blank" rel="nofollow">
           <AiFillLinkedin size="2.4rem" />
         </Link>
       </motion.span>
@@ -54,7 +46,7 @@ export const MyLinks = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
-        <Link href="https://www.instagram.com/dhawal_bisht/" target="_blank" rel="nofollow">
+        <Link href="https://www.instagram.com/axnand" target="_blank" rel="nofollow">
           <AiOutlineInstagram size="2.4rem" />
         </Link>
       </motion.span>

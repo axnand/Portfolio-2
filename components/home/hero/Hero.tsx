@@ -9,13 +9,13 @@ export const Hero = () => {
       <div className={styles.copyWrapper}>
         <Reveal>
           <h1 className={styles.title}>
-            Hey, I&apos;m Dhawal<span>.</span>
+            Hey, I&apos;m Anand<span>.</span>
           </h1>
         </Reveal>
         <Reveal>
           <h2 className={styles.subTitle}>
             I&apos;m  <span><ReactTypingEffect
-              text={["MERN Stack Developer.", "Ai/Ml enthusiast."]}
+              text={["MERN Stack Developer.","Next.js Developer.", "AI and Data Science enthusiast."]}
               speed={40}
               eraseSpeed={40}
               eraseDelay={900}
@@ -25,18 +25,29 @@ export const Hero = () => {
         </Reveal>
         <Reveal>
           <p className={styles.aboutCopy}>
-            Crafting meaningful websites that tell your story🎨
+          "Website creation is no longer just plain old text on your screen"💻
             <br />
-            Let&apos;s connect!
+            Let&apos;s connect and bring your vision to life!
           </p>
         </Reveal>
-        <Reveal>
-          <OutlineButton
-            onClick={() => document.getElementById("contact")?.scrollIntoView()}
-          >
-            Contact me
-          </OutlineButton>
-        </Reveal>
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
+  <Reveal>
+    <OutlineButton
+      onClick={() => document.getElementById("contact")?.scrollIntoView()}
+      className="flex-1"
+    >
+      Contact me
+    </OutlineButton>
+  </Reveal>
+  <Reveal>
+    <OutlineButton
+      onClick={() => document.getElementById("contact")?.scrollIntoView()}
+      className="flex-1"
+    >
+      View Resume
+    </OutlineButton>
+  </Reveal>
+</div>
       </div>
       <DotGrid />
     </section>

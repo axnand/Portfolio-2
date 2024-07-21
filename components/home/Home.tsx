@@ -4,6 +4,7 @@ import { Hero } from "./hero/Hero";
 import styles from "./home.module.scss";
 import { Heading } from "../nav/Heading";
 import { About } from "./about/About";
+import { Resume } from "./resume/Resume";
 import { Projects } from "./projects/Projects";
 import { Contact } from "./contact/Contact";
 import { ScrollTop } from "../buttons/ScrollTop"
@@ -17,6 +18,7 @@ export const Home = () => {
           <Hero />
           <About />
           <Projects />
+          <Resume />
           <Contact />
           <ScrollTop />
           <div

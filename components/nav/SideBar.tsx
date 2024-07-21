@@ -33,7 +33,7 @@ export const SideBar = () => {
       className={styles.sideBar}
     >
       <span className={styles.logo}>
-        D<span>.</span>
+        A<span>.</span>
       </span>
       <motion.a
         initial={{ x: -70 }}
@@ -68,6 +68,16 @@ export const SideBar = () => {
         className={selected === "projects" ? styles.selected : ""}
       >
         Projects
+      </motion.a>
+      <motion.a
+        initial={{ x: -70 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        href="#resume"
+        onClick={() => setSelected("resume")}
+        className={selected === "resume" ? styles.selected : ""}
+      >
+        Resume
       </motion.a>
       <motion.a
         initial={{ x: -70 }}
