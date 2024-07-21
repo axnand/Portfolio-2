@@ -17,9 +17,9 @@ export const Projects = () => {
 };
 const projects = [
   {
-    title: "&quot;Labour-Link&quot;",
-    imgSrc: "/project-imgs/project1.jpg",
-    code: "https://github.com/dhawalbisht/Labour-Link",
+    title: "Study Fliss",
+    imgSrc: "/project-imgs/project1.png",
+    
     projectLink: "https://labour-link-knn1.vercel.app/",
     tech: ["JavaScript", "ReactJs", "TailwindCss", "Firebase"],
     description:
@@ -59,7 +59,7 @@ The project serves the dual purpose of connecting both skilled and unskilled lab
   {
     title: "Insightify",
     imgSrc: "/project-imgs/project3.jpg",
-    code: "https://github.com/dhawalbisht/Insightify",
+    
     projectLink: "https://github.com/dhawalbisht/Insightify",
     tech: ["Fask", "ReactJs",  "CSS"],
     description:
@@ -83,7 +83,7 @@ The project serves the dual purpose of connecting both skilled and unskilled lab
   {
     title: "Expense Tracker",
     imgSrc: "/project-imgs/project2.jpg",
-    code: "https://github.com/dhawalbisht/Expense-Tracker",
+    
     projectLink: "https://dhawalbisht.github.io/Expense-Tracker/",
     tech: ["JavaScript", "ReactJs", "Vite",  "CSS"],
     description:
@@ -106,7 +106,7 @@ The project serves the dual purpose of connecting both skilled and unskilled lab
   {
     title: "Credit Card Fraud Detection",
     imgSrc: "/project-imgs/project4.png",
-    code: "https://github.com/dhawalbisht/CreditCardFraudDetection.git",
+    
     projectLink: "https://github.com/dhawalbisht/CreditCardFraudDetection.git",
     tech: ["TensorFlow", "Seaborn", "Python prediction libraries"],
     description:

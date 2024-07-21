@@ -13,7 +13,7 @@
     imgSrc: string;
     tech: string[];
     title: string;
-    code: string;
+    
   }
 
   export const Project = ({
@@ -22,7 +22,7 @@
     description,
     imgSrc,
     title,
-    code,
+    
     tech,
   }: Props) => {
 
@@ -72,9 +72,7 @@
                 <h4>{title}</h4>
                 <div className={styles.projectTitleLine} />
 
-                <Link href={code} target="_blank" rel="nofollow">
-                  <AiFillGithub size="2.8rem" />
-                </Link>
+                
 
                 {
                   projectLink != "" && (
@@ -103,7 +101,7 @@
           isOpen={isOpen}
           imgSrc={imgSrc}
           title={title}
-          code={code}
+          
           tech={tech}
         />
       </>

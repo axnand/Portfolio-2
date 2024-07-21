@@ -12,8 +12,8 @@ export const SideBar = () => {
       threshold: 0.3,
     };
 
-    const callback = (entries: any) => {
-      entries.forEach((entry: any) => {
+    const callback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setSelected(entry.target.id);
         }
@@ -23,6 +23,11 @@ export const SideBar = () => {
     const observer = new IntersectionObserver(callback, options);
 
     sections.forEach((section) => observer.observe(section));
+
+    // Clean up the observer on unmount
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
@@ -39,11 +44,9 @@ export const SideBar = () => {
         initial={{ x: -70 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        href="#"
-        onClick={() => {
-          setSelected("#");
-        }}
-        className={selected === "Home" ? styles.selected : ""}
+        href="#home"
+        onClick={() => setSelected("home")}
+        className={selected === "home" ? styles.selected : ""}
       >
         Home
       </motion.a>
@@ -52,9 +55,7 @@ export const SideBar = () => {
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
         href="#about"
-        onClick={() => {
-          setSelected("about");
-        }}
+        onClick={() => setSelected("about")}
         className={selected === "about" ? styles.selected : ""}
       >
         About

@@ -21,8 +21,9 @@ export const Resume = () => {
   }, []);
 
   return (
+    <section id="resume" className="section-wrapper">
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <Container fluid className="resume-section" id="resume">
+      <Container fluid className="resume-section" >
         <Particle />
 
         <Row style={{ display:"flex", justifyContent: "center" }}>
@@ -60,5 +61,6 @@ export const Resume = () => {
         </Row>
       </Container>
     </div>
+    </section>
   );
 };
