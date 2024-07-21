@@ -1,0 +1,25 @@
+.text-black {
+    color: black;
+  }
+/* resume.module.scss */
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  margin-top: 20px; 
+  text-align: center; /* Centers the button within its container */
+}
+
+.resume-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

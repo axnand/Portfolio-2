@@ -28,8 +28,8 @@ export const ScrollTop = () => {
   return (
     <div className={styles["scroll-wrapper"]}>
       {isVisible && (
-        <button onClick={goToBtn} className={styles.scroll}>
-          <AiOutlineArrowUp />
+        <button onClick={goToBtn} className={styles.scroll} style={{display:"flex", justifyContent:"center", }}>
+          <AiOutlineArrowUp  style={{marginTop:"15px"}}/>
         </button>
       )}
     </div>

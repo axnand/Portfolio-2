@@ -1,7 +1,8 @@
 import { Reveal } from "@/components/utils/Reveal";
+import { OutlineButton } from "../../buttons/OutlineButton";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
-import { OutlineButton } from "../../buttons/OutlineButton";
+
 import ReactTypingEffect from 'react-typing-effect';
 export const Hero = () => {
   return (
@@ -41,7 +42,7 @@ export const Hero = () => {
   </Reveal>
   <Reveal>
     <OutlineButton
-      onClick={() => document.getElementById("contact")?.scrollIntoView()}
+      onClick={() => document.getElementById("resume")?.scrollIntoView()}
       className="flex-1"
     >
       View Resume

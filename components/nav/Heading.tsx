@@ -62,6 +62,14 @@ export const Heading = () => {
             >
               About
             </a>
+            <a
+              href="#resume"
+              onClick={() => {
+                setSelected("resume");
+              }}
+            >
+              Resume
+            </a>
             <a href="#projects" onClick={() => setSelected("projects")}>Projects</a>
             <a
               href="#contact"

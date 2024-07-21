@@ -5,6 +5,8 @@ interface Props {
   children: string | JSX.Element;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   className?: string; // Add className to props
+  href?: string;
+  target?: string;
 }
 
 export const OutlineButton = ({ children, onClick, className }: Props) => {
