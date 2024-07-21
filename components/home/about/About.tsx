@@ -11,7 +11,13 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText}`}>
-              <span>Hi</span> there! My name is Anand Mohan Jha, and I&apos;m a Computer Science student with a passion for creating and designing websites. Passionate tech enthusiast with a knack for staying ahead in the ever-evolving tech landscape. Proven ability to leverage emerging technologies and contribute hands-on expertise. Eager to join innovative projects, driven by a commitment to continuous learning and impactful solutions.
+            <span>Hi</span> there! My name is Anand Mohan Jha, and I&apos;m a Delhi, India based engg student specialisng in AIDS (Artificial Intelligence and Data Science)
+            
+            And i make websites for fun.
+            <br />
+            Well versed with modern WebDev technologies like Nextjs, React, Nodejs.  Additionally, I’m skilled in Cloud Computing and DevOps, with experience in tools such as Docker, Jenkins, AWS, Azure, and CI/CD processes.
+
+              
             </p>
           </Reveal>
         </div>
