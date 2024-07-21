@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "./Particle";
-// import pdf from "../../Assets/../Assets/Muaz_Resume.pdf"; 
+
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const resumeLink ="https://raw.githubusercontent.com/axnand/Portfolio-2/public/resume//Anand_Resume.pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+const resumeLink ="https://raw.githubusercontent.com/axnand/Portfolio-2/public/resume/Anand_Resume.pdf";
 
 export const Resume= () => {
   const [width, setWidth] = useState(1200);
