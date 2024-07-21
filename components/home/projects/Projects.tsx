@@ -15,42 +15,36 @@ export const Projects = () => {
     </section>
   );
 };
+
 const projects = [
   {
     title: "Study Fliss",
     imgSrc: "/project-imgs/project1.png",
-    
-    projectLink: "https://labour-link-knn1.vercel.app/",
-    tech: ["JavaScript", "ReactJs", "TailwindCss", "Firebase"],
+    code: "https://github.com/axnand/StudyFliss2",
+    projectLink: "https://studyfliss.com/",
+    tech: ["NextJs", "NodeJs", "SupaBase","CloudFare R2", "TailwindCSS"],
     description:
-      "Our platform streamlines the process of connecting laborers with employment opportunities, providing a user-friendly interface for both parties involved. Feel free to explore and contribute to our project!",
+      "A website that comprises all the information/ resources a student might need to live his/her college years to the fullest. Through the efficient use of technology, we will transform the access to resources for students.",
     modalContent: (
       <>
         <p>
-The project serves the dual purpose of connecting both skilled and unskilled laborers seeking employment with users in need of their services. It is particularly beneficial for individuals looking to expand their reach in the job market or those new to a town seeking assistance with tasks such as house renovations, painting, electrical work, and more.
-        </p>
+        A website that comprises all the information/ resources a student might need to live his/her college years to the fullest. Through the efficient use of technology, we will transform the access to resources for students.        </p>
         <p>
-        Platform Workflow</p>
+        Platform Features</p>
         <p>
-1. Labourer Registration:
-   - Labourers register on the website by submitting necessary documents and providing basic details.
-   - Access the registration form through the "Find Work" page.<p>
+1. <b><u >Student Registration and Profile Management:</u></b> Register and manage student profiles with personal and academic details.</p>
 
 
-2. User Hiring Process:
-   - Users sign in using their phone numbers for authentication and receive an OTP.
-   - Fill out the user form with specific details about the job requirements.
-   - Browse and hire laborers based on their profiles.
-   - Make payments securely through the website.
+<p>2. <b><u>Notes Access and Management:</u></b> Access and manage up-to-date, verified notes across all IPU subjects and branches.</p>
 
-   </p>
-3. Confirmation and Communication:
-   - Users receive email notifications containing details about the hired laborer.
-   - This ensures transparency and effective communication between the two parties.
+   
+<p>3. <b><u>Startup Pitching Competitions:</u></b>
+Submit pitches, receive feedback, and compete for funding in our startup pitching competitions.
         </p>
-        <p>
-          Labour-Link is hosted in vercel
+        <p>4. <b><u>IPU Exams Analysis and Preparation:</u></b>
+Analyze past IPU exam papers and receive potential questions and study tips.
         </p>
+
       </>
     ),
   },
@@ -59,7 +53,7 @@ The project serves the dual purpose of connecting both skilled and unskilled lab
   {
     title: "Insightify",
     imgSrc: "/project-imgs/project3.jpg",
-    
+    code: "https://github.com/dhawalbisht/Insightify",
     projectLink: "https://github.com/dhawalbisht/Insightify",
     tech: ["Fask", "ReactJs",  "CSS"],
     description:
@@ -83,8 +77,8 @@ The project serves the dual purpose of connecting both skilled and unskilled lab
   {
     title: "Expense Tracker",
     imgSrc: "/project-imgs/project2.jpg",
-    
-    projectLink: "https://dhawalbisht.github.io/Expense-Tracker/",
+    code: "https://github.com/axnand/expenseTracker",
+    projectLink: "https://expense-tracker-pgs87u00m-anands-projects-eb4bd129.vercel.app/",
     tech: ["JavaScript", "ReactJs", "Vite",  "CSS"],
     description:
       "This project is a simple transaction management system where users can add new transactions by entering a text description and the corresponding amount. Transactions are categorized as either expenses (negative amounts) or income (positive amounts).",
@@ -106,7 +100,7 @@ The project serves the dual purpose of connecting both skilled and unskilled lab
   {
     title: "Credit Card Fraud Detection",
     imgSrc: "/project-imgs/project4.png",
-    
+    code: "https://github.com/dhawalbisht/CreditCardFraudDetection.git",
     projectLink: "https://github.com/dhawalbisht/CreditCardFraudDetection.git",
     tech: ["TensorFlow", "Seaborn", "Python prediction libraries"],
     description:

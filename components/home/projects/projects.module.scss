@@ -7,6 +7,14 @@
     grid-template-columns: 1fr;
   }
 }
+.projectImage {
+  border: 2px solid transparent; /* Default border color */
+  transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.projectImage:hover {
+  border-color: rgb(214, 59, 59); /* Border color on hover */
+}
 
 .projectImage {
   width: 100%;

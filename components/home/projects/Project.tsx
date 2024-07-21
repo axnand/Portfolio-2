@@ -13,7 +13,7 @@
     imgSrc: string;
     tech: string[];
     title: string;
-    
+    code: string;
   }
 
   export const Project = ({
@@ -22,7 +22,7 @@
     description,
     imgSrc,
     title,
-    
+    code,
     tech,
   }: Props) => {
 
@@ -55,13 +55,13 @@
         >
           <div
             onClick={() => setIsOpen(true)}
-            className={styles.projectImage}
-          >
+            className={styles.projectImage} /* Use the CSS module class */
+>
             <Image
               src={imgSrc}
-              quality={60}
-              height={200}
-              style={{ maxWidth: '100%', height: 'auto' }}
+              quality={100}
+              height={265}
+              style={{ maxWidth: '100%',  }}
               width={630}
               alt={`An image of the ${title} project.`}
             />
@@ -72,7 +72,9 @@
                 <h4>{title}</h4>
                 <div className={styles.projectTitleLine} />
 
-                
+                <Link href={code} target="_blank" rel="nofollow">
+                  <AiFillGithub size="2.8rem" />
+                </Link>
 
                 {
                   projectLink != "" && (
@@ -101,7 +103,7 @@
           isOpen={isOpen}
           imgSrc={imgSrc}
           title={title}
-          
+          code={code}
           tech={tech}
         />
       </>

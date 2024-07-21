@@ -11,7 +11,7 @@ interface Props {
   setIsOpen: Function;
   title: string;
   imgSrc: string;
-  
+  code: string;
   projectLink: string;
   tech: string[];
   modalContent: JSX.Element;
@@ -24,7 +24,7 @@ export const ProjectModal = ({
   imgSrc,
   isOpen,
   title,
-  
+  code,
   tech,
 }: Props) => {
   useEffect(() => {
@@ -65,7 +65,9 @@ export const ProjectModal = ({
               Project Links<span>.</span>
             </p>
             <div className={styles.links} style={{marginBottom:"15px"}}>
-              
+              <Link target="_blank" rel="nofollow" href={code}>
+                <AiFillGithub /> source code
+              </Link>
               {
                 projectLink != "" && (
                   <Link target="_blank" rel="nofollow" href={projectLink}>
@@ -75,7 +77,6 @@ export const ProjectModal = ({
               }
             </div>
           </div>
-
           <div className={styles.suppliedContent}>{modalContent}</div>
 
           
