@@ -1,6 +1,7 @@
 import { SectionHeader } from "@/components/utils/SectionHeader";
 import { Project } from "./Project";
 import styles from "./projects.module.scss";
+import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 
 export const Projects = () => {
   return (
@@ -52,7 +53,7 @@ Analyze past IPU exam papers and receive potential questions and study tips.
 
   {
     title: "Iphone Website",
-    imgSrc: "/project-imgs/image2.png",
+    imgSrc: "/project-imgs/iphone.png",
     code: "https://github.com/axnand/myiphone",
     projectLink: "https://myiphone-alpha.vercel.app/",
     tech: ["Vite", "ReactJs",  "ThreeJs" ,'GSAP'],
@@ -81,7 +82,53 @@ Engage users with a unique and interactive video carousel developed using GSAP f
       </>
     ),
   },
-  
+
+  {
+    title: "SnapsAI",
+    imgSrc: "/project-imgs/image4.png",
+    code: "https://github.com/axnand/SocioCon",
+    projectLink: "https://snaps-ai.vercel.app/",
+    tech: ["Microsoft FaceAPI", "ReactJs",  "Vite","NodeJs"],
+    description:
+      "This project is a Personal project for a Hackathon where I came with SnapsAI -By integrating advanced facial recognition technology, SnapsAI provides a seamless and secure way to handle event photos, ensuring that each attendee can easily find and access their personal images.",
+      modalContent: (
+        <>
+        <p>
+        SnapsAI is a cutting-edge solution that enhances the way event photos are managed and accessed. Utilizing Microsoft's FaceAPI, SnapsAI offers </p>
+         <p>Platform Features</p>
+         <p>
+ 1. <b><u >Face Scanning and Recognition:</u></b> Automatically scans and recognizes faces in event photos uploaded by photographers. This ensures efficient sorting and categorization of images based on individual attendees.</p>
+ 
+ 
+ <p>2. <b><u> Secure Photo Access:</u></b> Each attendee receives a unique QR code that grants them access to their own photos. This approach not only enhances security by restricting photo access to rightful owners but also simplifies the retrieval process for attendees.</p>
+ 
+    
+ <p>3. <b><u>Effortless Photo Management: </u></b>
+ Streamlines the process of photo organization and distribution, making it easier for both photographers and event participants to manage and enjoy their photos.
+         </p>
+         
+ 
+       </>
+    ),
+  },
+
+  {
+    title: "JetPicture's Website",
+    imgSrc: "/project-imgs/image3.png",
+    code: "https://github.com/axnand/jetpicture",
+    projectLink: "https://jetpicture.vercel.app/",
+    tech: ["JavaScript", "HTML5", "BootStrap", "CSS"],
+    description:
+      "This project was a paid project Website for a film production comany -JetPictures showcasing their team and works, given to me while working for a Digital Marketing Company.",
+      modalContent: (
+      <>
+      <a href="https://jetpicturesproduction.com/" style={{color:"#FF0000"}}><AiOutlineExport />WordPress Site</a>
+        <p><b>Jet Pictures</b> was a Film and Ads Production and making company. Director <b>Arun Jananthana</b> came to Apka Soft Tech for his Digital Marketing including Website creation so i made a sample Website according to his needs with HTML, CSS and Javascript but later we decided to use WordPress for developing the site</p>
+        <br></br>
+        
+      </>
+    ),
+  },
   {
     title: "Expense Tracker",
     imgSrc: "/project-imgs/project2.jpg",
@@ -95,36 +142,28 @@ Engage users with a unique and interactive video carousel developed using GSAP f
         <p>
         Personal Finance Management: Individuals can use this application to track their personal expenses, income sources, and overall financial health. It serves as a digital ledger for managing budgets and analyzing spending patterns.
         </p>
+       <p>
+        Made this while learning React and State changes.
+       </p>
+      </>
+    ),
+  },
+  {
+    title: "Mail Template-FRIDAY Intel",
+    imgSrc: "/project-imgs/image5.png",
+    code: "https://github.com/axnand/Fridayintel-mail-template",
+    projectLink: "https://fridayintel-mail-template.vercel.app/",
+    tech: ["HTML5", "CSS"],
+    description:
+      "My very first project which made  me switch from cloud to development when we needed a mail template for our company, with merely html and css I created this and now here I am",
+      modalContent: (
+      <>
         <p>
-        Small Business Accounting: Small businesses or freelancers can utilize the application to record business transactions, monitor cash flows, and maintain accurate financial records. The categorization feature aids in separating business expenses from personal ones.
+        Personal Project for a company I was working for, they needed a mail template to send to their client so i started learning development and made this for them and after that helped them making their website and learn a lot.
         </p>
-        <p>
-        Budget Tracking and Analysis: Users can leverage the total balance display and categorized transactions to create budgets, track expenses against income, identify areas for cost-cutting, and make informed financial decisions.
-        </p>
+       
       </>
     ),
   },
 
-  {
-    title: "JetPicture's Website",
-    imgSrc: "/project-imgs/image3.png",
-    code: "https://github.com/axnand/jetpicture",
-    projectLink: "https://jetpicture.vercel.app/",
-    tech: ["JavaScript", "HTML5", "BootStrap", "CSS"],
-    description:
-      "This project is a simple transaction management system where users can add new transactions by entering a text description and the corresponding amount. Transactions are categorized as either expenses (negative amounts) or income (positive amounts).",
-      modalContent: (
-      <>
-        <p>
-        Personal Finance Management: Individuals can use this application to track their personal expenses, income sources, and overall financial health. It serves as a digital ledger for managing budgets and analyzing spending patterns.
-        </p>
-        <p>
-        Small Business Accounting: Small businesses or freelancers can utilize the application to record business transactions, monitor cash flows, and maintain accurate financial records. The categorization feature aids in separating business expenses from personal ones.
-        </p>
-        <p>
-        Budget Tracking and Analysis: Users can leverage the total balance display and categorized transactions to create budgets, track expenses against income, identify areas for cost-cutting, and make informed financial decisions.
-        </p>
-      </>
-    ),
-  },
 ];

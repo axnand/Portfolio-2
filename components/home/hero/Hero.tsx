@@ -6,7 +6,7 @@ import styles from "./hero.module.scss";
 import ReactTypingEffect from 'react-typing-effect';
 export const Hero = () => {
   return (
-    <section className={`section-wrapper ${styles.hero}`}>
+    <section className={`section-wrapper ${styles.hero}`} id="home">
       <div className={styles.copyWrapper}>
         <Reveal>
           <h1 className={styles.title}>
