@@ -75,7 +75,7 @@ Analyze past IPU exam papers and receive potential questions and study tips.
 <p>3. <b><u>Custom Video Carousel (made with GSAP):</u></b>
 Engage users with a unique and interactive video carousel developed using GSAP for a personalized browsing experience.
         </p>
-        <p>4. <b><u>Custom Video Carousel (made with GSAP):</u></b>
+        <p>4. <b><u>Completely Responsive:</u></b>
         Consistent access and optimal viewing on any device with a fully responsive design that adapts to different screen sizes.
         </p>
 
