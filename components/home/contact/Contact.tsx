@@ -15,32 +15,38 @@ export const Contact = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current!, process.env.NEXT_PUBLIC_PUBLIC_KEY)
-      .then((result) => {
-        toast.success('Message sent!', {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-        });
-        setMessage('');
-        form.current!.reset();
-      }, (error) => {
-        toast.error('Something went wrong', {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-        });
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      form.current!,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY
+    ).then((result) => {
+      console.log('Success:', result.text); // Log success response
+      toast.success('Message sent!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
       });
+      setMessage('');
+      form.current!.reset();
+    }, (error) => {
+      console.error('Error:', error.text); // Log error response
+      toast.error('Something went wrong', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    });
   };
 
   const handleMessageChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -85,8 +91,8 @@ export const Contact = () => {
           <Reveal width="100%">
             <form autoComplete="false" className={styles.contantForm} ref={form} onSubmit={sendEmail}>
               <div className={styles.inputBox}>
-                <input type="text" placeholder="Full Name" autoComplete="false" name="to_name" required />
-                <input type="email" placeholder="Email Address" autoComplete="false" name="from_name" required />
+                <input type="text" placeholder="Full Name" autoComplete="false" name="from_name" required />
+                <input type="email" placeholder="Email Address" autoComplete="false" name="reply_to" required />
               </div>
               <textarea placeholder="Your Message"
                 autoComplete="false"
