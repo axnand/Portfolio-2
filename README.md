@@ -27,8 +27,8 @@ My portfolio website showcases my projects, skills, and experience as a web deve
 1. **Clone the Repository:**
 
    ```bash
-   https://github.com/dhawalbisht/My-Portfolio
-   cd your-portfolio
+   https://github.com/axnand/Portfolio-2
+   cd Portfolio-2
    npm install
    npm run dev
    

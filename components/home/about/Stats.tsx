@@ -13,8 +13,11 @@ export const Stats = () => {
             <span>My Arsenal </span>
           </h4>
           <div className={styles.statGrid}>
+
             <span className="chip">React.js</span>
             <span className="chip">Next.js</span>
+            <span className="chip">JavaScript</span>
+            <span className="chip">React.js</span>
             <span className="chip">MongoDB</span>
             <span className="chip">Java</span>
             <span className="chip">Node.js</span>
