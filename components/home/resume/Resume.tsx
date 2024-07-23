@@ -15,10 +15,18 @@ const resumeLink = "https://raw.githubusercontent.com/axnand/Portfolio-2/main/pu
 
 export const Resume = () => {
   const [width, setWidth] = useState(1200);
+  const [pageNumber, setPageNumber] = useState(1);
+  const [numPages, setNumPages] = useState(null);
 
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
+  const goToPrevPage = () => setPageNumber(prevPage => Math.max(prevPage - 1, 1));
+  const goToNextPage = () => setPageNumber(prevPage => Math.min(prevPage + 1, numPages));
 
   return (
     <section id="resume" className="section-wrapper">
@@ -46,10 +54,22 @@ export const Resume = () => {
             marginTop: "20px"
           }}
         >
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+          <Document
+              file={resumeLink}
+              onLoadSuccess={onDocumentLoadSuccess}
+              className="d-flex justify-content-center"
+            >
+              <Page pageNumber={pageNumber} scale={width > 786 ? 1.7 : 0.6} />
+            </Document>
         </Row>
+        <Row style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
+            <DownloadResumeBtn onClick={goToPrevPage} disabled={pageNumber <= 1}>
+              Previous Page
+            </DownloadResumeBtn>
+            <DownloadResumeBtn onClick={goToNextPage} disabled={pageNumber >= numPages} style={{ marginLeft: "10px" }}>
+              Next Page
+            </DownloadResumeBtn>
+          </Row>
 
         <Row style={{ display:"flex", justifyContent: "center" , marginTop:"20px"}}>
           <Reveal>
