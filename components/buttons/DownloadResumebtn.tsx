@@ -7,9 +7,10 @@ interface Props {
   className?: string;
   href?: string;
   target?: string;
+  disabled?: boolean; // Add disabled to Props interface
 }
 
-export const DownloadResumeBtn = ({ children, onClick, className, href, target }: Props) => {
+export const DownloadResumeBtn = ({ children, onClick, className, href, target, disabled }: Props) => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     if (onClick) {
       onClick(event);
@@ -23,6 +24,7 @@ export const DownloadResumeBtn = ({ children, onClick, className, href, target }
     <button
       onClick={handleClick}
       className={`${styles.outlineButton} ${className ? className : ""}`}
+      disabled={disabled} // Pass disabled to the button element
     >
       {children}
     </button>
