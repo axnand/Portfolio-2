@@ -8,6 +8,7 @@ interface Props {
   href?: string;
   target?: string;
   disabled?: boolean; // Add disabled to Props interface
+  style?: string;
 }
 
 export const DownloadResumeBtn = ({ children, onClick, className, href, target, disabled }: Props) => {
@@ -24,7 +25,8 @@ export const DownloadResumeBtn = ({ children, onClick, className, href, target, 
     <button
       onClick={handleClick}
       className={`${styles.outlineButton} ${className ? className : ""}`}
-      disabled={disabled} // Pass disabled to the button element
+      disabled={disabled}
+      // Pass disabled to the button element
     >
       {children}
     </button>
