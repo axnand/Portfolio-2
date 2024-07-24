@@ -62,14 +62,7 @@ export const Resume = () => {
             </Document>
           </Row>
 
-          <Row style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
-            <DownloadResumeBtn onClick={goToPrevPage} disabled={pageNumber <= 1}>
-              Previous Page
-            </DownloadResumeBtn>
-            <DownloadResumeBtn onClick={goToNextPage} disabled={pageNumber >= numPages} >
-              Next Page
-            </DownloadResumeBtn>
-          </Row>
+
 
           <Row style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
             <Reveal>
