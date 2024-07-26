@@ -17,6 +17,7 @@ export const Stats = () => {
             
             <span className="chip">Next.js</span>
             <span className="chip">React.js</span>
+            <span className="chip">TypeScript</span>
             <span className="chip">JavaScript</span>
             <span className="chip">MongoDB</span>
             <span className="chip">Java</span>
