@@ -49,6 +49,30 @@ Analyze past IPU exam papers and receive potential questions and study tips.
       </>
     ),
   },
+  {
+    title: "SupaBase Assignment",
+    imgSrc: "/project-imgs/supabase.png",
+    code: "https://github.com/axnand/SupabaseAssignment",
+    projectLink: "https://supabase-assignment.vercel.app/",
+    tech: [ "ReactJs", "Vite",  "Tailwind CSS", "Shadcn", "Acternity"],
+    description:
+      "This project was a assignment task for an internship interview where i had to redisgn the home, pricing and dashboard of Supabase",
+      modalContent: (
+      <>
+        <p>
+        Made this project as an assignment for an interview where i had to implement and rededign the HomePage, PricingPage, DashboardPage
+        </p>
+       <p>
+        Added Features like:
+        <ul className="list-disc">
+          <li>Light and Dark Mode</li>
+          <li>Implented Ui libraries like shadcn and Aceternity</li>
+          <li>Interactive components</li>
+        </ul>
+       </p>
+      </>
+    ),
+  },
 
 
   {
@@ -129,25 +153,7 @@ Engage users with a unique and interactive video carousel developed using GSAP f
       </>
     ),
   },
-  {
-    title: "Expense Tracker",
-    imgSrc: "/project-imgs/project2.jpg",
-    code: "https://github.com/axnand/expenseTracker",
-    projectLink: "https://expense-tracker-pgs87u00m-anands-projects-eb4bd129.vercel.app/",
-    tech: ["JavaScript", "ReactJs", "Vite",  "CSS"],
-    description:
-      "This project is a simple transaction management system where users can add new transactions by entering a text description and the corresponding amount. Transactions are categorized as either expenses (negative amounts) or income (positive amounts).",
-      modalContent: (
-      <>
-        <p>
-        Personal Finance Management: Individuals can use this application to track their personal expenses, income sources, and overall financial health. It serves as a digital ledger for managing budgets and analyzing spending patterns.
-        </p>
-       <p>
-        Made this while learning React and State changes.
-       </p>
-      </>
-    ),
-  },
+  
   {
     title: "Mail Template-FRIDAY Intel",
     imgSrc: "/project-imgs/image5.png",
