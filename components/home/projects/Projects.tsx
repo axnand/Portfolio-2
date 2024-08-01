@@ -51,7 +51,7 @@ Analyze past IPU exam papers and receive potential questions and study tips.
   },
   {
     title: "SupaBase Assignment",
-    imgSrc: "/project-imgs/supabase.png",
+    imgSrc: "/project-imgs/Supabase.png",
     code: "https://github.com/axnand/SupabaseAssignment",
     projectLink: "https://supabase-assignment.vercel.app/",
     tech: [ "ReactJs", "Vite",  "Tailwind CSS", "Shadcn", "Acternity"],
