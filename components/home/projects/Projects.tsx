@@ -20,30 +20,33 @@ export const Projects = () => {
 const projects = [
   {
     title: "Ziddle",
-    imgSrc: "/project-imgs/image7.png",
-    code: "https://github.com/yourusername/ziddle", 
+    imgSrc: "/project-imgs/image7.png", 
     projectLink: "https://beta.ziddle.tech/", 
     tech: ["NextJs", "NodeJs", "Cloudfare", "AWS", "MongoDB"],
     description:
       "Built a travel itinerary platform that generates personalized plans based on user preferences. Implemented seamless frontend-to-backend integration for a smooth user experience. Designed for scalability, high performance, and SEO optimization using Next.js (SSR) and Cloudflare caching.",
     modalContent: (
       <>
-        <p>
-          • Built a travel itinerary platform that generates personalized plans based on user preferences.
-        </p>
-        <p>
-          • Implemented seamless frontend-to-backend integration for a smooth user experience.
-        </p>
-        <p>
-          • Designed for scalability, high performance, and SEO optimization using <b>Next.js (SSR)</b> and <b>Cloudflare caching</b>.
-        </p>
-      </>
+  <p>
+    A travel itinerary platform that generates personalized plans based on user preferences.
+  </p>
+  <p>Platform Features</p>
+  <p>
+    1. <b><u>Personalized Itinerary Generation:</u></b> Built a travel itinerary platform that generates personalized plans based on user preferences.
+  </p>
+  <p>
+    2. <b><u>Seamless Frontend-to-Backend Integration:</u></b> Implemented seamless frontend-to-backend integration for a smooth user experience.
+  </p>
+  <p>
+    3. <b><u>Optimized Performance and SEO:</u></b> Designed for scalability, high performance, and SEO optimization using <b>Next.js (SSR)</b> and <b>Cloudflare caching</b>.
+  </p>
+</>
+
     ),
   },
   {
     title: "Integrated Management System",
     imgSrc: "/project-imgs/image9.png",
-    code: "https://github.com/yourusername/integrated-management-system", 
     projectLink: "https://emp-mgmt-tau.vercel.app/",
     tech: ["Next.js", "Node.js", "Express.js", "MongoDB"],
     description:
@@ -51,18 +54,22 @@ const projects = [
     modalContent: (
       <>
         <p>
-          • Developed a centralized system for digitizing employee records, attendance, and administrative workflows.
+          A centralized system developed to digitize employee records, attendance, and administrative workflows.
+        </p>
+        <p>Platform Features</p>
+        <p>
+          1. <b><u>Centralized Data Management:</u></b> Developed a centralized system for digitizing employee records, attendance, and administrative workflows.
         </p>
         <p>
-          • Automated HR processes, including transfers, payroll, and leave management, reducing paperwork and improving efficiency.
+          2. <b><u>Automated HR Processes:</u></b> Automated HR processes including transfers, payroll, and leave management, reducing paperwork and improving efficiency.
         </p>
         <p>
-          • Implemented secure role-based access control and real-time analytics dashboards to enhance data management and decision-making.
+          3. <b><u>Secure Access and Real-Time Analytics:</u></b> Implemented secure role-based access control and real-time analytics dashboards to enhance data management and decision-making.
         </p>
       </>
+
     ),
   },
-  // New Project 3: IADR-APR 2025 Conference Website
   {
     title: "IADR-APR 2025 Conference Website",
     imgSrc: "/project-imgs/image8.png",
@@ -74,15 +81,20 @@ const projects = [
     modalContent: (
       <>
         <p>
-          • Developed a secure, scalable web portal for the IADR-APR 2025 International Dental Conference.
+          A secure, scalable web portal developed for the IADR-APR 2025 International Dental Conference.
+        </p>
+        <p>Platform Features</p>
+        <p>
+          1. <b><u>Comprehensive Conference Management:</u></b> Developed a secure, scalable web portal for the IADR-APR 2025 International Dental Conference.
         </p>
         <p>
-          • Integrated Razorpay for seamless participant registration and payment processing, with an admin panel to manage registrations and track transactions.
+          2. <b><u>Seamless Payment Integration:</u></b> Integrated Razorpay for seamless participant registration and payment processing, with an admin panel to manage registrations and track transactions.
         </p>
         <p>
-          • Enabled custom-tailored confirmation emails for a smooth user experience.
+          3. <b><u>Custom Confirmation Emails:</u></b> Enabled custom-tailored confirmation emails for a smooth user experience.
         </p>
       </>
+
     ),
   },
   {

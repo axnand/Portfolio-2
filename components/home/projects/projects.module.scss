@@ -7,6 +7,31 @@
     grid-template-columns: 1fr;
   }
 }
+.tooltip {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0px;
+  right: 60px;
+  background: #fef9c3;
+  color: #a05e02;
+  padding: 2px 2px 2px 2px;
+  border-radius: 4px;
+  z-index: 9999;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.privateCodeWrapper:hover .tooltip {
+  opacity: 1;
+}
+
+
+
+
+
+
+
 .projectImage {
   border: 2px solid transparent; /* Default border color */
   transition: border-color 0.3s ease; /* Smooth transition */

@@ -6,12 +6,13 @@ import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import Image from "next/image";
+
 interface Props {
   isOpen: boolean;
   setIsOpen: Function;
   title: string;
   imgSrc: string;
-  code: string;
+  code?: string;
   projectLink: string;
   tech: string[];
   modalContent: JSX.Element;
@@ -29,7 +30,6 @@ export const ProjectModal = ({
 }: Props) => {
   useEffect(() => {
     const body = document.querySelector("body");
-
     if (isOpen) {
       body!.style.overflowY = "hidden";
     } else {
@@ -54,7 +54,7 @@ export const ProjectModal = ({
           src={imgSrc}
           height={300}
           width={660}
-          style={{ maxWidth: '100%', height: 'auto' }}
+          style={{ maxWidth: "100%", height: "auto" }}
           alt={`An image of the ${title} project.`}
         />
         <div className={styles.modalContent}>
@@ -64,22 +64,20 @@ export const ProjectModal = ({
             <p className={styles.linksText}>
               Project Links<span>.</span>
             </p>
-            <div className={styles.links} style={{marginBottom:"15px"}}>
-              <Link target="_blank" rel="nofollow" href={code}>
-                <AiFillGithub /> source code
-              </Link>
-              {
-                projectLink != "" && (
-                  <Link target="_blank" rel="nofollow" href={projectLink}>
+            <div className={styles.links} style={{ marginBottom: "15px" }}>
+              {code && code !== "" && (
+                <Link target="_blank" rel="nofollow" href={code}>
+                  <AiFillGithub /> source code
+                </Link>
+              ) }
+              {projectLink !== "" && (
+                <Link target="_blank" rel="nofollow" href={projectLink}>
                   <AiOutlineExport /> live project
                 </Link>
-                )
-              }
+              )}
             </div>
           </div>
           <div className={styles.suppliedContent}>{modalContent}</div>
-
-          
         </div>
       </motion.div>
     </div>
@@ -87,6 +85,5 @@ export const ProjectModal = ({
 
   if (!isOpen) return <></>;
 
-  // @ts-ignore
   return ReactDOM.createPortal(content, document.getElementById("root"));
 };
