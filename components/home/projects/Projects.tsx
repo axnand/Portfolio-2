@@ -24,7 +24,7 @@ const projects = [
     projectLink: "https://beta.ziddle.tech/", 
     tech: ["NextJs", "NodeJs", "Cloudfare", "AWS", "MongoDB"],
     description:
-      "Built a travel itinerary platform that generates personalized plans based on user preferences. Implemented seamless frontend-to-backend integration for a smooth user experience. Designed for scalability, high performance, and SEO optimization using Next.js (SSR) and Cloudflare caching.",
+      "Built a travel itinerary platform that generates personalized plans based on user preferences. Implemented seamless frontend-to-backend integration for a smooth user experience. ",
     modalContent: (
       <>
   <p>
@@ -50,7 +50,7 @@ const projects = [
     projectLink: "https://emp-mgmt-tau.vercel.app/",
     tech: ["Next.js", "Node.js", "Express.js", "MongoDB"],
     description:
-      "Developed a centralized system for the Chief Education Office, Doda, J&K, digitizing employee records, attendance, and administrative workflows across schools. Automated HR processes including transfers, payroll, and leave management, reducing paperwork and improving efficiency. Implemented secure role-based access control and real-time analytics dashboards.",
+      "Developed a centralized system for the Chief Education Office, Doda, J&K, digitizing employee records, attendance, and administrative workflows across schools.",
     modalContent: (
       <>
         <p>
@@ -76,7 +76,7 @@ const projects = [
     projectLink: "https://iadrapr2025.com/", // Replace with your actual project link if available
     tech: ["Next.js", "Tailwind CSS", "Razorpay API", "MongoDB", "AWS"],
     description:
-      "Developed a secure, scalable web portal for the IADR-APR 2025 International Dental Conference. Integrated Razorpay for seamless participant registration and payment processing, with a built-in admin panel to manage registrations, track transactions, and generate reports while enabling custom-tailored confirmation emails.",
+      "Developed a secure, scalable web portal for the IADR-APR 2025 International Dental Conference. Integrated Razorpay for seamless participant registration and payment processing, with a built-in admin panel to manage registrations, track transactions.",
     modalContent: (
       <>
         <p>
@@ -100,7 +100,7 @@ const projects = [
     title: "StamPick",
     imgSrc: "/project-imgs/image10.png", 
     projectLink: "https://stampick.vercel.app/", 
-    tech: ["Next.js", "React.js", "Tailwind CSS", "TypeScript", "Three.js", "GSAP", "Polygon", "TensorFlow", "OpenAI API", "Stripe", "Clerk API", "AWS", "Docker"],
+    tech: ["Next.js", "React.js", "Tailwind CSS", "TypeScript", "Three.js", "GSAP"],
     description:
       "Developed StamPick, a blockchain-powered marketplace and digital community for philatelists. Features include an AI-driven stamp scanner, secure auctions, a 3D virtual exhibition, and a blockchain-based authentication system for counterfeit detection.",
     modalContent: (
