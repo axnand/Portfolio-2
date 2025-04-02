@@ -73,7 +73,6 @@ const projects = [
   {
     title: "IADR-APR 2025 Conference Website",
     imgSrc: "/project-imgs/image8.png",
-    code: "https://github.com/yourusername/iadr-apr2025-conference", // Replace with your actual GitHub link if available
     projectLink: "https://iadrapr2025.com/", // Replace with your actual project link if available
     tech: ["Next.js", "Tailwind CSS", "Razorpay API", "MongoDB", "AWS"],
     description:
@@ -95,6 +94,43 @@ const projects = [
         </p>
       </>
 
+    ),
+  },
+  {
+    title: "StamPick",
+    imgSrc: "/project-imgs/image10.png", 
+    projectLink: "https://stampick.vercel.app/", 
+    tech: ["Next.js", "React.js", "Tailwind CSS", "TypeScript", "Three.js", "GSAP", "Polygon", "TensorFlow", "OpenAI API", "Stripe", "Clerk API", "AWS", "Docker"],
+    description:
+      "Developed StamPick, a blockchain-powered marketplace and digital community for philatelists. Features include an AI-driven stamp scanner, secure auctions, a 3D virtual exhibition, and a blockchain-based authentication system for counterfeit detection.",
+    modalContent: (
+      <>
+  <p>
+    StamPick is a centralized web platform connecting philatelists across India, enabling seamless buying, selling, and discovery of rare stamps. It overcomes geographical limitations and enhances accessibility for collectors, enthusiasts, and dealers.
+  </p>
+  <p><b>Key Features:</b></p>
+  <p>
+    1. <b><u>AI Stamp Scanner:</u></b> Uses AI to instantly identify stamps, providing historical details, rarity insights, and estimated value.
+  </p>
+  <p>
+    2. <b><u>Secure Auction Platform:</u></b> Enables online auctions for rare stamps with safe, transparent transactions.
+  </p>
+  <p>
+    3. <b><u>3D Virtual Exhibitions:</u></b> Integrated <b>Three.js</b> and <b>Blender</b> to create an immersive exhibition experience, allowing users to explore stamps in 3D.
+  </p>
+  <p>
+    4. <b><u>Blockchain Authentication:</u></b> Utilized <b>Polygon smart contracts</b> for counterfeit stamp detection and secure ownership verification.
+  </p>
+  <p>
+    5. <b><u>Philatelic Resources:</u></b> Provides articles and videos for beginners and experts, fostering a knowledge-driven community.
+  </p>
+  <p>
+    6. <b><u>Seamless Transactions:</u></b> Integrated <b>Stripe</b> for payments and <b>Clerk API</b> for authentication, ensuring a smooth user experience.
+  </p>
+  <p>
+    7. <b><u>Performance & Deployment:</u></b> Built with <b>Next.js</b> and deployed on <b>AWS</b> using <b>Docker</b>, ensuring scalability and high performance.
+  </p>
+</>
     ),
   },
   {
@@ -156,6 +192,8 @@ const projects = [
       </>
     ),
   },
+  
+
   {
     title: "SupaBase Assignment",
     imgSrc: "/project-imgs/Supabase.png",
