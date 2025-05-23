@@ -21,6 +21,7 @@ const projects = [
   {
     title: "Ziddle",
     imgSrc: "/project-imgs/image7.png", 
+    code: "https://github.com/axnand/Choo",
     projectLink: "https://beta.ziddle.tech/", 
     tech: ["NextJs", "NodeJs", "Cloudfare", "AWS", "MongoDB"],
     description:
@@ -46,6 +47,7 @@ const projects = [
   },
   {
     title: "Integrated Management System",
+    code: "https://github.com/axnand/employee-mgmt-system",
     imgSrc: "/project-imgs/image9.png",
     projectLink: "https://emp-mgmt-tau.vercel.app/",
     tech: ["Next.js", "Node.js", "Express.js", "MongoDB"],
@@ -72,6 +74,7 @@ const projects = [
   },
   {
     title: "IADR-APR 2025 Conference Website",
+    code: "https://github.com/axnand/iadr-registration",
     imgSrc: "/project-imgs/image8.png",
     projectLink: "https://iadrapr2025.com/", // Replace with your actual project link if available
     tech: ["Next.js", "Tailwind CSS", "Razorpay API", "MongoDB", "AWS"],
@@ -99,6 +102,7 @@ const projects = [
   {
     title: "StamPick",
     imgSrc: "/project-imgs/image10.png", 
+    code: "https://github.com/axnand/SupabaseAssignment",
     projectLink: "https://stampick.vercel.app/", 
     tech: ["Next.js", "React.js", "Tailwind CSS", "TypeScript", "Three.js", "GSAP"],
     description:
