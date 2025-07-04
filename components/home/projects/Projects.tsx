@@ -25,7 +25,7 @@ const projects = [
     projectLink: "https://beta.ziddle.tech/", 
     tech: ["NextJs", "NodeJs", "Cloudfare", "AWS", "MongoDB"],
     description:
-      "Built a travel itinerary platform that generates personalized plans based on user preferences. Implemented seamless frontend-to-backend integration for a smooth user experience. ",
+      "Ziddle is a travel itinerary generator that customizes travel plans based on user preferences. Optimized for performance and SEO using SSR and Cloudflare caching. ",
     modalContent: (
       <>
   <p>
