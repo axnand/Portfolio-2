@@ -11,17 +11,19 @@ export const About = () => {
         <div>
           <Reveal>
             <div>
-            <p className={`${styles.aboutText}`}>
-            <span>Hi</span> there! My name is Anand Mohan Jha, and I&apos;m a Delhi, India based engg student specialisng in AIDS (Artificial Intelligence and Data Science)
-            
-            And I make websites for fun and <b>learn DSA for placements</b>.</p>
-            <p className={`${styles.aboutText}`}>
-            
-            Well versed with modern WebDev technologies like Nextjs, React, Nodejs.  Additionally, I’m skilled in <b>Cloud Computing and DevOps</b>, with experience in tools such as <b>Docker, Jenkins, AWS, Azure, and CI/CD processes</b>.
+  <Reveal>
+    <div>
+      <p className={`${styles.aboutText}`}>
+        <span>Hi</span> there! I'm Anand Mohan Jha, an engineering student from Delhi, India, specializing in <b>Artificial Intelligence and Data Science</b> (AIDS).
+        I enjoy building full-stack web applications and practice <b>Data Structures and Algorithms</b> for placements.
+      </p>
+      <p className={`${styles.aboutText}`}>
+        I'm well-versed in modern web development technologies including <b>Next.js, React, and Node.js</b>. I also have hands-on experience with <b>Cloud Computing and DevOps</b>, working with tools like <b>AWS, Docker, Jenkins, Azure, and CI/CD pipelines</b>.
+      </p>
+    </div>
+  </Reveal>
+</div>
 
-              
-            </p>
-            </div>
           </Reveal>
         </div>
         <Stats />
